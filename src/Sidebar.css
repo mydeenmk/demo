@@ -1,0 +1,79 @@
+  /* Sidebar styles */
+  .sidebar {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: '#4CAF50';
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px; 
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  }
+
+  .sidebar li {
+    width: 100%;
+  }
+
+  .sidebar li:hover {
+    background-color: #575757;
+    
+  }
+
+  .sidebar a, .sidebar button {
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0;
+    display: block;
+    text-align: center; /* Center text */
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+  }
+
+  .sidebar a:hover, .sidebar button:hover {
+    background-color: #ddd;
+    color: #4caf50;
+  }
+
+  .active {
+    font-weight: bold;
+  }
+
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100px; /* Adjust sidebar width for smaller screens */
+    }
+
+    .content {
+      margin-left: 100px; /* Adjust content margin for smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 80px; /* Adjust sidebar width for mobile screens */
+    }
+
+  }
